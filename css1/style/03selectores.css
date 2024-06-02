@@ -1,0 +1,86 @@
+/*SELECTORES COMPUESTOS*/
+body{
+	background-color: gray;
+}
+/*agrupados*/
+.titulo2,.parrafo{
+	color: green;
+}
+/*descendientes*/
+.tag{
+
+	color: red;
+	font-weight: bold;
+}
+/* hijo directo */
+li > ul{
+	display: none;
+}
+li:hover ul{
+	display: block;
+}
+/*ejemplo hermano siguiente*/
+.t2{
+	color: red;
+
+}
+.t2-2{
+	color: blue;
+
+
+}
+.p{
+
+	font-size: .8em;
+}.t2 + .p{
+	color: red;
+}
+.t2-2 + .p{
+	color: blue;
+}
+/*selectores por atributo*/
+/*atributo=valor*/
+ [type=email]{
+ 	border: 2px solid blue;
+
+ }
+  [type="submit"]{
+  	background-color: red;
+  	color: white;
+  	border: none;
+  }
+  /*atributo*/
+   [required]{
+   	border: 2px solid green;
+   	margin: .5em;
+
+   }
+   /*Comodines*/
+   /*enpiezan con*/
+    [href^="https:" ]{
+    	color: lime;
+    }
+    /* termina con */
+    [href$=".pdf" ]{
+    	color: green;
+    }
+    /*contiene*/
+    [class*="buttom-" ]{
+    	color: white;
+    	display: inline-block;
+    	margin: 1em;
+    	padding: 1em 2em;
+    	text-decoration: none;
+    }
+    .buttom-cta{
+    	background-color: orange;
+
+    }
+    .buttom-alert{
+    	background-color: red;
+    }
+    /*contiene mas espacios*/
+     [atributo~="valor"]
+     /*comienza con algo y termina en un - */
+     [atributo!="valor"]
+     [class!="buttom"]

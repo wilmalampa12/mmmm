@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>especificidad</title>
+	<link rel="stylesheet" type="text/css" href="style/04especificidad.css">
+</head>
+<body>
+	<h1>Especificidad</h1>
+	<p style="color:green">Es el mecanismo que permite decidir al navegador ed estilo aplicara a un elemento,entonces se tiene los siguientes valores segun los selectores</p>
+	<ul>
+		<li>tags o elementos ponderacion--> 1</li>
+		<li>clase ponderacion--> 10</li>
+		<li>id ponderacion--> 100</li>
+		<li>inline ponderacion--> 1000</li>
+		<li>important se sobrepone ante todos</li>
+	</ul>
+	<div id="main">
+		
+		<article class="post">
+			<p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quia adipisci voluptatum soluta enim magnam recusandae doloremque rerum odit. Ipsa at accusamus assumenda nesciunt fugiat obcaecati laudantium sit, repellendus ipsum. <a href="#">has click</a> </p>
+		</article>
+	</div>
+	<h1>herencia</h1>
+	<p>los elementos descendientes heredan propiedades de sus padres o contenedores o elementos superiores, pero no todos pueden heredar se puede gozar la herencia o evitarla</p>
+	<h1>hola clase de <span>tew-200</span> </h1>
+	<span>tew-200</span>
+	<p>buenos dias <a href="#">visita mi pagina</a></p>
+
+</body>
+</html>

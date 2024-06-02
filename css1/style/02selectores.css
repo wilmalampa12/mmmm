@@ -1,0 +1,47 @@
+/*selectores universal*/
+*{
+	margin: 0;
+	padding: 0;
+	color: blue;
+}
+
+
+
+/*selectores de elemento especificidad de 1*/
+body{
+	background: teal;
+}
+h2{
+	color: brown;
+}
+/*selectores de clase especificidad de 10*/
+.titulo2{
+	background: yellow;
+	color: red;
+	
+
+
+}
+.parrafo2{
+	background: green;
+	color:white;
+	
+	
+
+
+}
+/*definicion de clases*/
+.center{
+	text-align: center;
+}
+.bold{
+	font-weight: bold;
+}
+/*selectores por id especificidad de 100*/
+
+#tit2{
+	background: blue;
+}
+h2{
+	color: black;
+}

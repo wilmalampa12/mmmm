@@ -1,0 +1,35 @@
+body{
+	background-color: gray;
+}
+/*ESPECIFICIDAD*/
+/*mayor especificidad*/
+body div#main .post p{
+	color: brown;
+
+
+}
+
+#main .post p{
+	color: red;
+
+}
+p{
+	color: red !important;
+
+}
+body div#main article.post p{
+	color: yellow !important;
+
+
+}
+/*HERENCIA*/
+/*evitando la herencia initial--> resetea un elemento a su valor inicial*/
+span{
+	font-size: initial;
+}
+/*forzando la herencia inherit--> obliga a que un elemento herede*/
+a{
+	
+	color: inherit;
+
+}

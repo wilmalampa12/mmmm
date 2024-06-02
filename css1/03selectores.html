@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css3-variables</title>
+	<link rel="stylesheet" type="text/css" href="style/03selectores.css">
+</head>
+<body>
+	<h1>SELECTORES COMPUESTOS</h1>
+	<p>Se refiere a que hay mas de un selector y que juntos hacen una seleccion diferente,combinados,el mas sencillo es el agrupado</p>
+	<h2 class="titulo2">selectores agrupados</h2>
+	<p class="parrafo">Agrupa selectores a travez de la ",", todos los selctores estas separados por una coma ","</p>
+	<h2 class="selecDesc">selectores descendientes </h2>
+	<p>Los selectores descendiente indican cuando un elmento es hijo o nieto o bisnieto o cualquier tipo de descendencia,lo importante es que este dentro sin importar el nive, ejemplo:</p>
+	<h3>hijo directo</h3>
+	<ul class="lista">
+	<li class="lista-item">lista 1</li>
+	<li class="lista-item">lista 2</li>
+	<li class="lista-item">lista 3</li>
+	<li class="lista-item">lista 4<span class="tag">>></span> 
+		<ul>
+			<li class="subItemn">sub lista 1</li>
+			<li class="subItemn">sub lista 2</li>
+			<li class="subItemn">sub lista 3</li>
+			<li class="subItemn">sub lista 4</li>
+		</ul>
+
+
+	 </li>
+    </ul>
+    <h3 class="t2">hermano siguiente ejemplo</h3>
+    <p class="p">selecciona el elemento que esta justo despues de otro elemento, el tipo + es que hace referencia o relaciona hermana siguiente </p>
+    <h3 class="t2-2">hermano siguiente</h3>
+    <p class="p">selecciona el elemento que esta justo despues de otro elemento, el tipo + es que hace referencia o relaciona hermano siguiente </p>
+    <h2>selectores por atributo</h2>
+    <p>un selector de atributos selecciona ual elemento a partir de cualquier atributo que no sea nesesariamente una clase o id todos los selectores de atributo se encierran entre corchetes </p>
+    <p>se tiene la siguiente clasificacion</p>
+    <h3>SENCILLOS</h3>
+    <p>usan atributo=valor o solo atributo --> ejemplo:</p>
+    <input type="email" name="">
+    <input type="date" required>
+    <input type="submit" value="enviar">
+
+    <h3>CON COMODINES</h3>
+    <h4>Empieza con"atributo^=valor"</h4>
+    <a href="css/01ejemplo.html">ver ejemplo 1</a>
+    <a href="https://facebook.com">facebook</a>
+    <a href="https://google.com">google</a>
+    <h4>Termina con"atributo$=valor"</h4>
+     <a href="css/01ejemplo.html">ver ejemplo 1</a>
+     <a href="css/01ejemplo.pdf">ver ejemplo en pdf</a>
+     <a href="css/01ejemplo.doc">ver ejemplo en doc</a>
+     <a href="css/tutorial.pdf">ver tutorial en pdf</a>
+    <h4>que contienen un valor "atributo*="valor"</h4>
+    <a href="#"class="buttom buttom-cta" >ingresar</a>
+    <a href="#"class="buttom buttom-alert" >cancelar tu cuenta</a>
+
+</body>
+</html>

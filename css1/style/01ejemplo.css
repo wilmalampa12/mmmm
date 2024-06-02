@@ -1,0 +1,16 @@
+:root{
+	--color:tomato;
+
+
+}
+body{
+
+	background: var(--color);
+	margin: 10px;
+
+}
+h1{
+	background: black;
+	color: var(--color);
+}
+
